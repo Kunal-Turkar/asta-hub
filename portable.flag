@@ -1,0 +1,3 @@
+# Presence of this file enables single-folder Portable Mode.
+# All library metadata (userData/library.db), portable apps, cloned repos,
+# cached installers, and optional PortableGit live inside ./data/

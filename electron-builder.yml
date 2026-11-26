@@ -1,0 +1,26 @@
+appId: com.asta.hub
+productName: ASTA Hub
+directories:
+  output: dist-package
+  buildResources: build
+files:
+  - dist-main/**/*
+  - dist-renderer/**/*
+  - package.json
+  - node_modules/sql.js/dist/sql-wasm.wasm
+asar: true
+asarUnpack:
+  - node_modules/sql.js/dist/sql-wasm.wasm
+win:
+  target:
+    - target: nsis
+      arch:
+        - x64
+    - target: portable
+      arch:
+        - x64
+nsis:
+  oneClick: false
+  allowToChangeInstallationDirectory: true
+  createDesktopShortcut: true
+  createStartMenuShortcut: true

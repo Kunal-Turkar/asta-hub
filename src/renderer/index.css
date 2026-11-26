@@ -1,0 +1,138 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  html,
+  body,
+  #root {
+    height: 100%;
+    margin: 0;
+  }
+
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: rgba(148, 163, 184, 0.25);
+    border-radius: 9999px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgba(148, 163, 184, 0.45);
+  }
+}
+
+.readme-prose {
+  line-height: 1.65;
+  font-size: 0.925rem;
+}
+
+.readme-prose h1,
+.readme-prose h2,
+.readme-prose h3,
+.readme-prose h4 {
+  font-weight: 700;
+  margin-top: 1.4em;
+  margin-bottom: 0.55em;
+  line-height: 1.3;
+}
+
+.readme-prose h1 {
+  font-size: 1.5rem;
+  padding-bottom: 0.35rem;
+  border-bottom: 1px solid rgba(148, 163, 184, 0.2);
+}
+
+.readme-prose h2 {
+  font-size: 1.25rem;
+  padding-bottom: 0.25rem;
+  border-bottom: 1px solid rgba(148, 163, 184, 0.15);
+}
+
+.readme-prose h3 {
+  font-size: 1.075rem;
+}
+
+.readme-prose p,
+.readme-prose ul,
+.readme-prose ol,
+.readme-prose blockquote,
+.readme-prose table,
+.readme-prose pre {
+  margin-bottom: 0.9rem;
+}
+
+.readme-prose ul {
+  list-style: disc;
+  padding-left: 1.4rem;
+}
+
+.readme-prose ol {
+  list-style: decimal;
+  padding-left: 1.4rem;
+}
+
+.readme-prose li + li {
+  margin-top: 0.25rem;
+}
+
+.readme-prose a {
+  color: #818cf8;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.readme-prose code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 0.85em;
+  padding: 0.15rem 0.38rem;
+  border-radius: 0.35rem;
+  background: rgba(148, 163, 184, 0.16);
+}
+
+.readme-prose pre {
+  overflow-x: auto;
+  padding: 0.85rem 1rem;
+  border-radius: 0.65rem;
+  background: rgba(15, 23, 42, 0.85);
+  border: 1px solid rgba(148, 163, 184, 0.18);
+}
+
+.readme-prose pre code {
+  padding: 0;
+  background: transparent;
+  font-size: 0.825rem;
+  color: #e2e8f0;
+}
+
+.readme-prose blockquote {
+  border-left: 3px solid #6366f1;
+  padding-left: 0.9rem;
+  opacity: 0.85;
+}
+
+.readme-prose table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.875rem;
+}
+
+.readme-prose th,
+.readme-prose td {
+  border: 1px solid rgba(148, 163, 184, 0.2);
+  padding: 0.45rem 0.65rem;
+  text-align: left;
+}
+
+.readme-prose img {
+  max-width: 100%;
+  height: auto;
+  display: inline-block;
+  border-radius: 0.35rem;
+}
